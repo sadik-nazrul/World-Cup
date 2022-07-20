@@ -109,8 +109,7 @@ img{
 
 @media (max-width: 576px) {
     .hero{
-        width: 334px;
-        height: 700px;
+        height: 650px;
         padding-top: 40px;
         display: flex;
         flex-direction: column;
@@ -120,12 +119,18 @@ img{
     .info{
         text-align: center;
     }
+    .hero h2 {
+        font-weight: 600;
+        font-size: 35px;
+        margin: 0;
+        line-height: 1.2;
+    }
      
 }
 
 /* end */
 
-/* Second section code start */
+/* Blog section Big device START */
 .sec-container{
     padding: 30px 0 50px 0;
     display: flex;
@@ -165,7 +170,7 @@ img{
     grid-template-columns: repeat(2, 1fr);
 }
 .blog{
-    border-radius: 6px;
+    border-radius: 13px;
     box-shadow: 0 0 1px 0 rgba(0,0,0,0.75);
 }
 .time{
@@ -176,4 +181,61 @@ img{
 .cmnt{
     display: flex;
     justify-content: flex-start;
+}
+/* Blog section Big device END */
+
+/* Blog section Tablet Start */
+@media(max-width:768px){
+    .blogs{
+        width: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .indicator{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #ffffff;
+    }
+    .blog-btn {
+        width: 30%;
+        box-shadow: 0 0 1px 0 rgb(0 0 0 / 75%);
+        border: 1px;
+        border-radius: 6px;
+    }
+    .category{
+        height: auto;
+    }
+    .all-blogs{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        padding: 0 30px;
+    }
+    .blog{
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* Blog section tablet END */
+
+/* Blog section Mobile START */
+@media (max-width: 576px){
+    .indicator{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #ffffff;
+    }
+    .blog-btn {
+        width: 80%;
+        margin: auto;
+        box-shadow: 0 0 1px 0 rgb(0 0 0 / 75%);
+        border: 1px;
+        border-radius: 6px;
+    }
+    .all-blogs {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 30px;
+    }
 }
