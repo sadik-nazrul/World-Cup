@@ -1,0 +1,125 @@
+/* Global css */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* common css */
+.container{
+    padding: 30px 0 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    padding: 16px 25px;
+    border-radius: 6px;
+}
+.btn:hover{
+    background-color: white;
+    color: red;
+}
+.fa-solid{
+    padding-left: 10px;
+}
+
+/* Hero section css */
+.hero{
+    width: 1100px;
+    height: 637px;
+    padding: 20px 106px 0 106px;
+    border-radius: 30px;
+    background-color: #161616;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.hero > * {
+    flex-basis: 100%;
+}
+.info{
+    text-align: left;
+}
+
+.hero h2{
+    font-weight: 600;
+    font-size: 70px;
+    margin: 0;
+    line-height: 1.3em;
+}
+.hero p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.btn1{
+    background-color: red;
+    color: white;
+    border: 0;
+}
+
+.show{
+    display: flex;
+    align-self: flex-end;
+}
+
+/* END */
+
+/* Hero section tablet css */
+@media(max-width:768px){
+    .container{
+        padding: 30px 30px 50px 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero{
+        width: 700px;
+        height: 500px;
+        padding: 0 40px;
+    }
+    .hero > * {
+        flex-basis: 100%;
+    }
+    .hero h2 {
+        font-weight: 600;
+        font-size: 40px;
+        margin: 0;
+        line-height: 1.2;
+    }
+    .hero p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+}
+
+/* End */
+
+/* Hero section Mobile */
+
+@media (max-width: 576px) {
+    .hero{
+        width: 334px;
+        height: 700px;
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .info{
+        text-align: center;
+    }
+     
+}
+
+/* end */
