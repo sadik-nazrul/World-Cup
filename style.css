@@ -19,6 +19,8 @@ img{
 .btn{
     padding: 16px 25px;
     border-radius: 6px;
+    background-color: white;
+    color: red;
 }
 .btn:hover{
     background-color: white;
@@ -30,9 +32,9 @@ img{
 
 /* Hero section css */
 .hero{
-    width: 1100px;
+    width: 950px;
     height: 637px;
-    padding: 20px 106px 0 106px;
+    padding: 0 75px 0 75px;
     border-radius: 30px;
     background-color: #161616;
     display: flex;
@@ -40,7 +42,6 @@ img{
     align-items: center;
     color: white;
 }
-
 .hero > * {
     flex-basis: 100%;
 }
@@ -125,12 +126,54 @@ img{
 /* end */
 
 /* Second section code start */
+.sec-container{
+    padding: 30px 0 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .blogs{
     width: 1100px;
     display: grid;
+    gap: 20px;
     grid-template-columns: 300px 1fr;
 }
+.category{
+    height: 100vh;
+}
+.indicator{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #161616;
+    padding: 30px;
+    border-radius: 10px;
+    gap: 10px;
+}
+
 .all-blogs{
     display: grid;
+    gap: 25px;
     grid-template-columns: repeat(3, 1fr);
+}
+
+.data{
+    padding: 10px;
+}
+.meta{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.blog{
+    border-radius: 6px;
+    box-shadow: 0 0 1px 0 rgba(0,0,0,0.75);
+}
+.time{
+    display: flex;
+    justify-content: flex-start;
+
+}
+.cmnt{
+    display: flex;
+    justify-content: flex-start;
 }
