@@ -142,9 +142,9 @@ img{
     gap: 20px;
     grid-template-columns: 300px 1fr;
 }
-.category{
+/* .category{
     height: 100vh;
-}
+} */
 .indicator{
     display: flex;
     flex-direction: column;
@@ -301,3 +301,33 @@ img{
     }
 }
 /* Footer Mobile END */
+
+/* Match page css START */
+.matches {
+    border: 1px solid #00000010;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+}
+.flag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.team h3{
+    margin: 0;
+}
+.team p{
+    font-weight: lighter;
+}
