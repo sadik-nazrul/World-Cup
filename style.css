@@ -66,6 +66,13 @@ img{
     color: white;
     border: 0;
 }
+.live{
+    text-decoration: none;
+    color: #ffffff;
+}
+.live:hover{
+    color: red;
+}
 
 .show{
     display: flex;
