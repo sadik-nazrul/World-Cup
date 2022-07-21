@@ -186,6 +186,12 @@ img{
     display: flex;
     justify-content: flex-start;
 }
+.hide{
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
 /* Blog section Big device END */
 
 /* Blog section Tablet Start */
@@ -220,6 +226,16 @@ img{
         display: flex;
         flex-direction: column;
     }
+    .hide{
+        width: 50%;
+        margin: auto;
+        border-radius: 6px;
+        padding: 10px 20px;
+        background-color: red;
+        color: white;
+        font-size: 20px;
+        display: block;
+    }
 }
 /* Blog section tablet END */
 
@@ -241,6 +257,16 @@ img{
     .all-blogs {
         grid-template-columns: repeat(1, 1fr);
         padding: 0 30px;
+    }
+    .hide{
+        width: 50%;
+        margin: auto;
+        border-radius: 6px;
+        padding: 10px 20px;
+        background-color: red;
+        color: white;
+        font-size: 20px;
+        display: none;
     }
 }
 /* Blog section Mobile END */
@@ -272,6 +298,13 @@ img{
     gap: 40px;
     font-weight: 200;
 }
+.social{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 20px;
+    padding-top: 20px;
+}
 /* Footer END */
 
 /* Footer Tablet START */
@@ -293,7 +326,7 @@ img{
 /* Footer Mobile START */
 @media (max-width: 576px){
     .footer{
-        padding: 20px 0;
+        padding: 40px 0;
     }
     .footer hr{
         width: 330px;
